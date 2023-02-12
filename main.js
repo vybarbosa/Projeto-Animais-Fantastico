@@ -89,7 +89,23 @@ function initAnimacaoScroll () {
 }
 initAnimacaoScroll();
 
-
+function backToTop () {
+    const button = document.querySelector('.buttonInit a')
+    if(button){
+        function homePage(event){
+            event.preventDefault();
+            const href = event.currentTarget.getAttribute('href');
+            const section = document.querySelector(href)
+            
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        }
+        button.addEventListener('click', homePage);
+    }
+}
+backToTop();
 
 
 

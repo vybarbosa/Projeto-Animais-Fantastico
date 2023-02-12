@@ -25,7 +25,7 @@ body {
 }
 
 .menu {
-    grid-column: 3 / 5;
+    grid-column: 3 / 4;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background: #FB5;
@@ -283,4 +283,23 @@ body {
 .js .js-scroll.ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.buttonInit {
+    grid-column-end: ;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #FB5;
+    cursor: pointer;
+    margin-top: 500px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttonInit a {
+    text-decoration: none;
+    font-size: 25px;
 }
